@@ -4,6 +4,6 @@ Move to github from Sourceforge https://sourceforge.net/projects/ensuite/
 
 Original authors:
 
- Vincent CRIDLIG
- Radu STATE
- Olivier FESTOR
+* Vincent CRIDLIG
+* Radu STATE
+* Olivier FESTOR
