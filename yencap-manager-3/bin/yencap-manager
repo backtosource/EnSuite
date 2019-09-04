@@ -1,0 +1,104 @@
+#!/bin/sh
+#
+# yencaPManager:       Starts the Yenca Manager Daemon
+#
+# Version:      @(#) /etc/init.d/yencaPManager.init 1.3
+#
+# description: This is a daemon which runs a Netconf manager
+# processname: yencaPManager
+
+DAEMON="/usr/bin/yencaPManager"
+INIT="/etc/ensuite/yencap-manager/config.xml"
+NAME="yencaPManager"
+DESC="Netconf manager"
+HOMEDIR="/usr/local/ensuite/yencap-manager"
+LOGDIR="/usr/local/ensuite/yencap-manager/log"
+PIDFILE="/var/run/yencap-manager"
+
+
+# Check the existence of required files
+test -f $DAEMON || exit 0
+test -f $INIT || exit 0
+
+# Identify the distribution
+if [ -f /etc/debian_version ]
+then
+	DISTRIB="DEBIAN"
+elif [ -f /etc/fedora-release ]
+then
+	DISTRIB="FEDORA"
+elif [ -f /etc/redhat-release ]
+then
+	DISTRIB="REDHAT"
+fi
+
+if [ $DISTRIB != "DEBIAN" ]
+then
+	# Source function library.
+	. /etc/init.d/functions
+fi
+
+start() {
+	echo -n $"Starting $DESC"
+	if [ $DISTRIB == "DEBIAN" ]
+	then
+		start-stop-daemon --start --quiet --name $NAME --make-pidfile --pidfile $PIDFILE --exec /usr/bin/python $DAEMON &
+	else
+		daemon +5 $NAME &
+	fi
+	RETVAL=$?
+	sleep 2
+	echo
+	if [ $RETVAL -ne 0 ]; then
+	    return $RETVAL
+	fi
+}
+
+stop() {	
+	echo -n $"Stoping $DESC"
+	if [ $DISTRIB == "DEBIAN" ]
+	then
+		kill `cat $PIDFILE`
+	else
+		killall -9 $NAME
+	fi
+	RETVAL=$?
+	echo
+	if [ $RETVAL -ne 0 ]; then
+	    return $RETVAL
+	fi
+	
+}
+
+# See how we were called.
+RETVAL=0
+
+case "$1" in
+  'start' )
+  	start;
+	echo
+	break;;
+  'stop' )
+  	stop;
+	echo
+	break;;
+  'restart'  )
+  	$0 stop
+	$0 start
+	echo
+	break;;
+  'status' )
+  	if [ $DISTRIB != "DEBIAN" ]
+	then
+		status $NAME
+		RETVAL=$?
+	else
+		echo $"Usage: $0 {start|stop|restart}";
+	fi
+	;;
+  *)
+	echo $"Usage: $0 {start|stop|status|restart}";
+	exit 1;;
+esac 
+
+exit $?

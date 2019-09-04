@@ -1,0 +1,234 @@
+/* --------------------------------------------------
+CSS Document For Leaves v1.0 - Anthonyy @ OSWD.org
+-------------------------------------------------- */
+
+/* CONTAINER */
+
+#container {
+	width: 1100px;
+	margin: 0 auto;
+	font-family: Lucida Grande, Tahoma, Arial, Helvetica, sans-serif; /* Lucida Grande for the Macs, Tahoma for the PCs */
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #666;
+	background-color: #FFF;
+}
+
+/* GENERAL MOJO AND MULA */
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 32px;
+	color: #CC6633;
+	margin-bottom: 30px;
+	background-color: #FFF;
+}
+
+
+
+a {
+	color:#CC6714;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#CC6714;
+	background-color: #F5F5F5;
+}
+
+
+/*form {
+	float:right;
+	margin-top: -45px;
+	font-size: 9px;
+}*/
+
+input {
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #CCC;
+	font-size: 11px;
+	padding: 3px;
+}
+
+.button {
+	padding: 2px;
+}
+
+select {
+	width: 150px;
+}
+
+
+/* HEADER ELEMENTS */
+
+#header {
+	border-bottom: 4px solid #948979;
+	padding-top: 10px;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+
+/* the slogan */
+#header p { 
+	margin-top: -20px;
+	margin-left: 30px;
+	color: #999999;
+}
+
+
+#column1 {
+	float: left;
+	width: 180px;
+}
+
+/* nav ELEMENTS */
+	
+#nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;	
+	//float: left;
+	width: 140px;
+}
+
+#nav ul li a {
+	display: block;
+	padding: 5px;
+	width: 120px;
+	border-bottom: 1px solid #CCC;
+}
+
+#nav ul ul li {
+	line-height: 10px;
+	border-bottom: none;
+	margin-right: 10px;
+	text-align: right;
+}
+
+#nav a:link, #navlist a:visited {
+	color:#000000;
+	text-decoration: none;
+}
+
+#nav ul li a:hover {
+	background: #000000 96% 50% no-repeat;
+	background-color: #F5F5F5;
+	color:#CC6714;
+}
+
+ #nav ul li {
+	display: inline;
+}
+
+/* THE SMALL BOX BELOW NAV */
+
+#nav p {
+	margin-top: 40px;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+	border-top: 1px dotted #CCC;
+	background-color: #F5F5F5;
+}
+
+/* CONTENT ELEMENTS */
+
+#content {
+	width: 700px;
+	margin-left: 180px;
+	margin-top: 20px;
+	margin-right: 200px;
+}
+
+#content h2 {
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #575352;
+	border-top: 1px solid #575352;
+	border-right: 20px solid #575352;
+	color: #000;
+	font-size: 130%;
+	font-weight: normal;
+	margin: 5px 0;
+	background: #F5F5F5;
+}
+
+#content h2:hover {
+	border-bottom: 1px solid #7f9fc6;
+	border-top: 1px solid #7f9fc6;
+	background: #c9dcea;
+}
+
+#content p {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD; /* A faint grey line below the text */
+}
+
+code {
+    border-left : 6px solid #90b662;
+    border-top : 1px solid #90b662;
+    border-right : 1px solid #90b662;
+    border-bottom : 1px solid #90b662;
+    margin-bottom : 5px;
+    margin-top : 5px;
+    padding : 8px;
+    font-family : monospace;
+    font-size: 120%;
+    background-color : #def0c8;
+    color : #000000;
+    display: block;
+}
+
+/* SIDEBAR ELEMENTS */
+
+#sidebar {
+	float: right;
+	width: 175px;
+}
+
+#sidebar h2 {
+	color: #666666;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+}
+
+#sidebar p {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+/* FOOTER ELEMENTS */
+
+#footer {
+	margin-top: 20px;
+	clear: both;
+	background-color:#575352;
+	padding: 0px 5px 0px 5px;
+}
+
+#footer p {
+	color:#89817f;
+	padding: 5px;
+}
+
+#footer p a {
+	color: #89817f;
+	border-bottom: 1px dotted #89817f;
+}
+
+#footer p a:hover {
+	color: #FFFFFF;
+	background-color:#575352;
+}
+
+/* And they lived happily ever after. The End. */
+table
+{
+border: 1px solid;
+border-color: #575352;
+width: 100%;
+}

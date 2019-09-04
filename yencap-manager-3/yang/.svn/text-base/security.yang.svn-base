@@ -1,0 +1,10 @@
+submodule security {
+
+   belongs-to netconf { prefix sec; }
+   include rbac;
+   
+
+	grouping security {	
+		uses rbac;
+	}
+}

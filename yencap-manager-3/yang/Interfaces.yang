@@ -1,0 +1,63 @@
+module Interfaces {
+
+	namespace "urn:loria:madynes:ensuite:yencap:module:Interfaces:1.0";
+	prefix "ifs";
+	
+	import ietf-inet-types { prefix yt; }
+	
+
+	grouping generic-state {
+	    leaf bytes {type uint64;}
+	    leaf packets { type uint64;}
+	    leaf drop { type uint64;}
+	    leaf compressed {type uint64;}
+	    leaf fifo { type uint64;}
+	    leaf errs {type uint64;}
+	}
+	
+	grouping v4add {
+		container ipv4 {
+			leaf address-v4 { type yt:ipv4-address; }
+			leaf netmask { type yt:ipv4-address; }
+		}
+	}
+	
+	grouping v6add {
+		container ipv6 {
+			leaf address-v6 { type yt:ipv6-address; }
+			leaf netmask { type yt:ipv6-address; }
+		}
+	}
+	
+	container interfaces {
+		list interface {
+			key name;
+			leaf name { type string;}
+			leaf mac-address { type string;
+								default "000000000000";
+								mandatory false;}
+			leaf mtu { type uint32;}
+			choice ad-type {
+				case v4 { uses v4add; }
+				case v6 { uses v6add; }
+			}
+			
+			container stats {
+				config false;
+				container received { 
+				  uses generic-state;
+				  leaf frame { type int64;}
+				  leaf multicast { type int64;}
+				}
+				container transmit { 
+				config false;
+					uses generic-state;
+					leaf carrier { type uint64;}
+					leaf colls { type uint64;}
+				}
+			}
+			
+		}
+		  
+	}
+}

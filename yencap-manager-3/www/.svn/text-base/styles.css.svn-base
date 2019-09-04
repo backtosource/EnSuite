@@ -1,0 +1,223 @@
+/* CSS version 2.0, by Boris Cherny. */
+/*Many thanks to Andreas, NickyD, ditchCrawler, TomW, whowrotewhat, hash bar, and Sanden Cottongame */
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #6183ad url(Images/background_big.gif) center repeat-y;
+	color: #616161;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 69%;
+	text-align: center;
+}
+a {
+	color: #6799b1;
+	text-decoration: underline;
+}
+a:hover {
+	color: #838f96;
+	text-decoration: none;
+}
+acronym {
+	border-bottom: 1px dashed #999999;
+	cursor: help;
+}
+h1 {
+	border-bottom: 1px solid #aec4de;
+	border-top: 1px solid #aec4de;
+	border-right: 20px solid #6183ad;
+	color: #6183ad;
+	font-size: 130%;
+	font-weight: normal;
+	margin: 5px 0;
+	background: #d7e5ef;
+}
+h1:hover {
+	border-bottom: 1px solid #7f9fc6;
+	border-top: 1px solid #7f9fc6;
+	background: #c9dcea;
+}
+input {
+	border: 1px solid #c9dcea;
+//	margin: 2px 10px;
+	margin: 2px 5px;
+}
+textarea {
+	border: 1px solid #c9dcea;
+	margin: 2px 10px;
+}
+
+#column2 ul {
+	margin: 10px 0;
+}
+#column2 li {
+	color: #999999;
+	list-style: square inside;
+	text-indent: 10px;
+}
+.login {
+	border: 1px solid #c9dcea;
+	color: #999;
+}
+.login_hover {
+	border: 1px solid #999;
+	color: #ccc;
+}
+#submit {
+	border: 1px solid #c9dcea;
+	color: #999;
+	cursor: pointer;
+	margin: 2px 20px;
+	text-decoration: none;
+	width: 140px;
+	text-align:center;
+}
+#submit_hover {
+	border: 1px solid #999;
+	color: #ccc;
+	cursor: pointer;
+	margin: 2px 20px;
+	text-decoration: none;
+	text-align:center;
+}
+/* The background-image's for the #wrap below are for preloading all the page's images, just add your own images to the pattern */
+#wrap {
+	background-image: url(Images/arrow.gif);
+	background-image: url(Images/arrow_outline.gif);
+	background-image: url(Images/background.gif);
+	background-image: url(Images/camera1.gif);
+	background-image: url(Images/camera2.gif);
+	background-image: url(Images/camera3.gif);
+	background-image: url(Images/header_big.gif);
+	background-image: url(Images/selector.gif);
+	background-image: url(Images/selector_sub.gif);
+	background-repeat: no-repeat;
+	background-position: -5000px -5000px;
+	margin: 0 auto;
+	text-align: left;
+	width: 800px;
+}
+#header {
+	background: url(Images/header_big.gif) center no-repeat;
+	color: #e0e0e0;
+	font-size: 327%;
+	font-weight: bold;
+	height: 100px;
+	line-height: 120px;
+	text-indent: 150px;
+}
+#nav {
+	padding-bottom: 40px;
+	width: 179px;
+}
+/* leave the padding-bottom in the #nav if you want some space between the navigation and the photos in the left column */
+#nav ul li {
+	display: inline;
+	line-height: 16px;
+	list-style: none;
+}
+#nav ul li a {
+	border-bottom: 1px solid #c9dcea;
+	color: #fff;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	width: 169px;
+}
+/* remove the 'text-decoration: underline;' in #nav li a:hover if you don't want the links in the left nav menu to be underlined when the user hovers over them with their mouse */
+#nav li a:hover {
+	background: #c9dcea url(Images/selector.gif) center right no-repeat;
+	color: #000;
+}
+/* the following 3 rules are for the submenu, if you removed the submenu remove these rules as well */
+#nav ul ul li {
+	line-height: 10px;
+	border-bottom: none;
+}
+#nav ul ul li a {
+	color: #d7e5ef;
+	text-indent: 10px;
+}
+#nav ul ul li a:hover {
+	color: #000;
+	background-image: url(Images/selector_sub.gif);
+}
+#column1 {
+	float: left;
+	width: 180px;
+}
+#column1 img {
+	border: 1px solid #c9dcea;
+	margin: 5px 20px;
+	padding: 10px 20px;
+}
+/* in the tag below, #column2, I used the Underscore Hack to give the column2 div the correct margins in Firefox 1 */
+#column2 {
+	float: none !important;
+	float: right;
+	margin-left: 192px !important;
+	margin-left: 0;
+	padding: 12px 40px 30px 9px;
+}
+#column2 p {
+	line-height: 190%;
+}
+#links div {
+	float: left;
+	width: 140px;
+}
+#links div li {
+	list-style: none;
+}
+#links div li a {
+	background: url(Images/arrow_outline.gif) left no-repeat;
+	padding-left: 15px;
+	text-decoration: none;
+}
+#links div li a:hover {
+	background-image: url(Images/arrow.gif);
+	color: #ac835c;
+	text-decoration: underline;
+}
+#footer {
+	clear: both;
+	color: #999;
+	font-size: 9px;
+	padding: 30px 0 10px 0;
+	text-indent: 185px;
+}
+#footer a {
+	color: #999999;
+	text-decoration: underline;
+}
+
+code {
+    border-left : 6px solid #90b662;
+    border-top : 1px solid #90b662;
+    border-right : 1px solid #90b662;
+    border-bottom : 1px solid #90b662;
+    margin-bottom : 5px;
+    margin-top : 5px;
+    padding : 8px;
+    font-family : monospace;
+    font-size: 120%;
+    background-color : #def0c8;
+    color : #000000;
+    display: block;
+}
+
+table
+{
+border: 1px solid;
+border-color: #6183ad;
+width: 100%;
+}
+
+select {
+border: 1px solid #c9dcea;
+//margin: 2px 10px;
+margin: 2px 5px;
+width: 110px;
+}

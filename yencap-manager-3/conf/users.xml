@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+<!-- 
+	Authorized user for the manager 
+-->
+  	
+	<user>
+		<login>netconf</login>
+		<password>netconf</password>
+		<devicesperpage>15</devicesperpage>
+		<privatekeyfile type="rsa">/root/workspace/yencap-manager/conf/id_rsa</privatekeyfile>
+	</user>
+	<user>
+		<login>bob</login>
+		<password>a</password>
+		<devicesperpage>15</devicesperpage>
+	</user> 
+	<user>
+		<login>neuf</login>
+		<password>telecom</password>
+		<devicesperpage>15</devicesperpage>
+	</user> 
+	<user>
+		<login>alice</login>
+		<password>b</password>
+		<devicesperpage>15</devicesperpage>
+	</user>
+
+</users>

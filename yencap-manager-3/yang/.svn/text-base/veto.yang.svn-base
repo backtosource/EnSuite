@@ -1,0 +1,160 @@
+module veto {
+
+namespace "urn:loria:madynes:ensuite:yencap:1.0:module:Veto:1.0";
+
+prefix "vt";
+
+typedef vtNumber { type uint64 ; }
+typedef vtIdentifier { 
+    type string {
+	    pattern "([a-z]|[A-Z])(([a-z]|[A-Z]|[0-9]|_|-)*)";
+	}
+}
+typedef vtValue { 
+	type union {
+	      type vtNumber;
+	      type vtIdentifier;
+	 }
+}
+typedef vtTerm { 
+    type string {
+	    pattern "SIP:(request|response|message|headers)\. " +
+				"(method|status-code|uri|Call-ID|date)";
+    }
+}
+
+typedef vtOperator {
+	type string {
+		pattern "@(ge|le|in|match)";
+	}
+}
+
+typedef vtPropertyName { 
+    type string {
+	    pattern "target|include|locality|ressource";
+	}
+}
+typedef vtProto { 
+    type string {
+	    pattern "tcp|udp|sip";
+	}
+}
+typedef vtPort { type int32 {range "0..65535";} }
+typedef vtLocality { 
+    type string {
+       pattern "very low|low|medium|high|very high";
+    }
+}
+typedef contextIdType { type string;}
+typedef eventIDType { type string;}
+typedef definitionIDType { type string;}
+typedef vetoIdType { type string;}
+
+
+
+container veto {
+
+list context {
+
+   description "A list of veto context blocs";
+ 
+   key id;
+   
+   leaf id { type vetoIdType; }
+   list target {
+      
+      key uri/address;
+      
+      container uri {
+          leaf proto { type vtProto; }
+          leaf address {
+              type string;
+              mandatory true;
+          }
+          leaf port { type vtPort; }
+      }
+      leaf date { type string; }
+      leaf version { type string; }
+   }
+   leaf-list include { type contextIdType; }
+   leaf locality { type vtLocality; }
+   list resource {
+   
+       key name;
+   
+       leaf name { type string; }
+       leaf-list value { 
+           type string;
+           min-elements 1; 
+       }
+   }
+}
+
+
+
+list definitions {
+     key name;
+     leaf name { type string; }
+     leaf when { type vtTerm; }
+     leaf operator { type vtOperator;}
+     leaf pattern { type string; }
+     choice action {
+           case event {leaf event {type string;} }
+          case collection {
+               leaf collectionName { type string;}
+               leaf collectionType { type string;} 
+          }
+     }
+     
+}
+
+list preventions {
+     key name; 
+     leaf name {type string;}
+     leaf uses { 
+     	type leafref  {
+        	path "../../definitions/name";} 
+     }
+     leaf event { 
+     	type leafref {
+        	path "../../definitions[name = current()/../uses]/actions/event";}
+     }
+     list actions {
+     	key name;
+     	leaf name { type string;}
+        choice action {
+			case condition {
+				container condition {
+            		leaf term { type vtTerm;}
+            		leaf operator { type vtOperator;}
+               		choice operand {
+                    	case constant {
+                    		leaf constant { type string;}
+                    	}
+                    	case variable {
+                    		leaf variable {
+                    			type leafref {
+                           			path "../definitions[name = current()/../uses]"
+                                      + "/collectionName";
+                                }
+                    		}
+                		}
+                	}
+                }
+            }
+        	case drop {      
+            	leaf drop { type empty;}
+        	}
+        	case store {
+        		leaf store{ 
+        			type leafref {
+                    	path  "../definitions[name = current()/../uses]"
+                                      + "/collectionName";
+                    }
+        		} 
+    		}
+		}
+	}	
+}
+}
+}}

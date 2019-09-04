@@ -1,0 +1,13 @@
+module DNS {
+
+	namespace "urn:loria:madynes:ensuite:yencap:module:Dns:1.0";
+	prefix "dns";
+	
+	import ietf-inet-types { prefix ip;}
+	
+	container dns {
+	
+		leaf-list server { type ip:ipv4-address; }
+		
+	}
+}

@@ -1,0 +1,6 @@
+
+
+
+A certificate is needed for the HTTP server to work over SSL. SSL is mandatory in YencaPManager to avoid login/password stealing. A default one is stored in the conf directory. If you want to generate your own certificate, run the following command and store the file in the conf directory before installing yencapManager:
+> openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+

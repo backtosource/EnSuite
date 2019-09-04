@@ -1,0 +1,16 @@
+module System {
+
+	namespace "urn:loria:madynes:ensuite:yencap:module:System:1.0";
+	prefix "sys";
+	
+
+	container system {
+	
+		leaf sysname { type string;}
+		leaf nodename { type string;}
+		leaf release { type string;}
+		leaf version { type string;}
+		leaf machine { type string;}
+	
+	}
+}

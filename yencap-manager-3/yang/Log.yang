@@ -1,0 +1,28 @@
+module Log {
+
+	namespace "urn:loria:madynes:ensuite:yencap:module:Log:1.0";
+	prefix "lg";
+	
+	
+	container log {
+		must "logs-number > 5";
+		leaf logs-number { type int8;
+		mandatory true;}
+		leaf last-log-updated { 
+			type leafref {
+				path "../log-info/file";
+			}
+			config false;
+		}
+		leaf log-mode { type enumeration
+						 { enum text;
+						   enum bin;
+						  }
+		}
+		list log-info {
+			key file;
+			leaf file {type string;}
+			leaf size {type int16;}
+		}
+	}
+}

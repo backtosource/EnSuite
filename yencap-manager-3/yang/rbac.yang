@@ -1,0 +1,97 @@
+module rbac {
+	
+	namespace "urn:loria:madynes:ensuite:yencap:module:RBAC:1.0";
+	prefix "rabc";
+	
+	
+ 	typedef user_id {
+ 		type int16 {
+ 			range "1..max";
+ 		}
+ 	}
+ 	
+ 	
+ 	typedef name {
+ 		type string {
+ 			length "3..30";
+ 			pattern "[A-Z]([a-z| ])*";
+ 		}
+ 	}
+ 	typedef login {
+ 		type string {
+ 			length "3..8";
+ 			pattern "[a-z]*";
+ 		}
+ 	}
+ 	typedef user_password {
+ 		type string {
+ 			length "8..25";
+ 		}
+ 	}
+ 	
+ 	typedef public_key {
+ 		type string;
+ 	}
+ 	typedef user_room {
+ 		type string;
+ 	}
+ 	
+ 	grouping user_localization {
+ 		leaf firstname { type name;}
+ 		leaf lastname { type name;}
+ 		leaf room {type user_room;}
+ 		leaf public-key {type public_key;} 
+ 	}
+ 	
+
+	container rbac {
+		container users {
+			list user {
+				key "login";		
+				leaf id {type user_id;}
+				leaf login { type login;}
+				leaf password { type user_password;}
+				choice  c {
+					case user_localization{
+						uses user_localization;
+					}
+					case nolocation {
+						leaf nolocation {
+							type empty;
+						}
+					}
+				}
+			}
+		}
+		container roles {
+			list role {
+				key "id";	
+				leaf id { type role_id;}
+				container junior-roles {
+						leaf-list junior-role {
+							type junior_role;
+						}
+				}
+			}
+		}
+	
+}
+ 	
+ 	
+ 	typedef role_id {
+ 		type int16 {
+ 			range "1..max";
+ 		}
+ 	}
+ 	
+ 	typedef junior_role {
+ 		type role_id;
+ 	}
+ 	
+ 	
+   
+ 	}
+ 	
+ 
+
+}

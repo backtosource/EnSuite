@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Modules/BGP_Module
+END
+BGP_Module.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Modules/BGP_Module/BGP_Module.xsl
+END
+BGP_Module.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Modules/BGP_Module/BGP_Module.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Modules/BGP_Module/__init__.py
+END

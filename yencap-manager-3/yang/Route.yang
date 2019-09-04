@@ -1,0 +1,27 @@
+module Route {
+
+	namespace "urn:loria:madynes:ensuite:yencap:module:Route:1.0";
+	prefix rt;
+	
+	import ietf-inet-types { prefix ip;}
+	
+	container routes {
+	
+		list route {
+			key target;
+			leaf target { type ip:ipv4-address;}
+			leaf gateway { type ip:ipv4-address;}
+			leaf genmask { type ip:ipv4-address;}
+			leaf metric { type uint32;}
+			leaf ref { type uint64;
+						config false;
+					}
+			leaf use { type uint64;
+						config false;
+					}
+			leaf ifname { type string;}
+		}
+	
+	}
+	
+}

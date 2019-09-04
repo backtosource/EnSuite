@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agents>
+	<agent type="ssh">
+		<ipaddress type="4">152.81.6.24</ipaddress>
+		<publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAIEA71ffg9MGvB46fLXz1Y4VP+P2n1l51/kxEagnVnZQUSVBloMsiQqoKyIZAsqdsfu7limZgngPWjL1WUzbqOBSgSyQ05yiaQmrgSq+dgh9HanYwcXERELTyw06iuZnyv/d0tO6dHA4qzkThsVhN0y1S3eefgceyva4SM26h/YV11U=</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">127.0.0.1</ipaddress>
+		 <publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAIEA71ffg9MGvB46fLXz1Y4VP+P2n1l51/kxEagnVnZQUSVBloMsiQqoKyIZAsqdsfu7limZgngPWjL1WUzbqOBSgSyQ05yiaQmrgSq+dgh9HanYwcXERELTyw06iuZnyv/d0tO6dHA4qzkThsVhN0y1S3eefgceyva4SM26h/YV11U=</publickey> 
+		 <!--  <publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAQEAqTxcJzG3UZYThjTDWgD+QsI3uS6BakwQ+Cel1xAcrTR/4EwPl/88+uh+mkbhJM1ODgEAoEIV64maIyRDdHaA/c9bXaRFmijyPW04mfKxWOpeq6yEcqO5UelM7m19l+nMo0IhhmX88dgqWHKLtOouPgb4hqjF+19CwFzAWVAE83tB39y2stDuhpOc//iPOvflnCBfvuthmV2L4PbGihDxgrBpvWUn10TXKWITHQuCwCIPppzl7TRHxMLrA3zvVMXdmPokP6/y8MAEbu5at4eFtolStX2ANgRTIAxIiXEQz4RHgrwJ6d2ZKJjBfiMuYn03TakbGFLkUWE7DP1KO0+IhQ==</publickey> -->
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">152.81.13.169</ipaddress>
+		 <publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAIEA71ffg9MGvB46fLXz1Y4VP+P2n1l51/kxEagnVnZQUSVBloMsiQqoKyIZAsqdsfu7limZgngPWjL1WUzbqOBSgSyQ05yiaQmrgSq+dgh9HanYwcXERELTyw06iuZnyv/d0tO6dHA4qzkThsVhN0y1S3eefgceyva4SM26h/YV11U=</publickey> 
+		 <!--  <publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAQEAqTxcJzG3UZYThjTDWgD+QsI3uS6BakwQ+Cel1xAcrTR/4EwPl/88+uh+mkbhJM1ODgEAoEIV64maIyRDdHaA/c9bXaRFmijyPW04mfKxWOpeq6yEcqO5UelM7m19l+nMo0IhhmX88dgqWHKLtOouPgb4hqjF+19CwFzAWVAE83tB39y2stDuhpOc//iPOvflnCBfvuthmV2L4PbGihDxgrBpvWUn10TXKWITHQuCwCIPppzl7TRHxMLrA3zvVMXdmPokP6/y8MAEbu5at4eFtolStX2ANgRTIAxIiXEQz4RHgrwJ6d2ZKJjBfiMuYn03TakbGFLkUWE7DP1KO0+IhQ==</publickey> -->
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.2</ipaddress>
+		<publickey type="rsa">AAAAB3NzaC1yc2EAAAABIwAAAIEA71ffg9MGvB46fLXz1Y4VP+P2n1l51/kxEagnVnZQUSVBloMsiQqoKyIZAsqdsfu7limZgngPWjL1WUzbqOBSgSyQ05yiaQmrgSq+dgh9HanYwcXERELTyw06iuZnyv/d0tO6dHA4qzkThsVhN0y1S3eefgceyva4SM26h/YV11U=</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.3</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.4</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.5</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="workstation"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.6</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="workstation"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.78</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="workstation"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="workstation"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="workstation"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="workstation"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.0.79</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.1.0</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.1.2</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.1.3</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.1.4</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+	<agent type="ssh">
+		<ipaddress type="4">192.168.1.5</ipaddress>
+		<publickey type="rsa">98g7a5xra52cf55z4ret5d4gds54fg65d</publickey>
+		<groups>
+			<group ref="router"/>
+			<group ref="server"/>
+		</groups>
+		<capabilities>
+			<capability ref="urn:ietf:params:netconf:base:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:writable-running:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:candidate:1.0"/>
+			<capability ref="urn:ietf:params:netconf:capability:xpath:1.0"/>
+		</capabilities>
+	</agent>
+
+</agents>

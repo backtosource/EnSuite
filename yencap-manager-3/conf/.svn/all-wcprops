@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ensuite/!svn/ver/77/branches/yang-yencap-manager/conf
+END
+modules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/modules.xml
+END
+users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/77/branches/yang-yencap-manager/conf/users.xml
+END
+agents.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ensuite/!svn/ver/81/branches/yang-yencap-manager/conf/agents.xml
+END
+config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/config.xml
+END
+id_rsa.pub
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/id_rsa.pub
+END
+id_rsa
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/id_rsa
+END
+server.pem
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/server.pem
+END
+capabilities.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/conf/capabilities.xml
+END

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+	
+	<module>
+		<name>RBAC</name>
+		<xpath>/ycp:netconf/ycp:security/ac:rbac</xpath>
+		<namespace pref="ac">urn:loria:madynes:ensuite:yencap:module:RBAC:1.0</namespace>
+	</module>
+
+	<module>
+		<name>Interfaces</name>
+		<xpath>/ycp:netconf/ycp:network/ifs:interfaces</xpath>
+		<namespace pref="ifs">urn:loria:madynes:ensuite:yencap:module:Interfaces:1.0</namespace>
+	</module>
+
+	<module>
+		<name>Route</name>
+		<xpath>/ycp:netconf/ycp:network/rt:routes</xpath>
+		<namespace pref="rt">urn:loria:madynes:ensuite:yencap:module:Route:1.0</namespace>
+	</module>
+
+	<module>
+		<name>RIP</name>
+		<xpath>/ycp:netconf/ycp:routing/rip:rip</xpath>
+		<namespace pref="rip">urn:loria:madynes:ensuite:yencap:module:RIP:1.0</namespace>
+	</module>
+
+	<module>
+		<name>BGP</name>
+		<xpath>/ycp:netconf/ycp:routing/bgp:bgp</xpath>
+		<namespace pref="bgp">urn:loria:madynes:ensuite:yencap:module:BGP:1.0</namespace>
+	</module>
+
+	<module>
+		<name>ASTERISK</name>
+		<xpath>/ycp:netconf/voip:asterisk</xpath>
+		<namespace pref="voip">urn:loria:madynes:ensuite:yencap:module:ASTERISK:1.0</namespace>
+	</module>
+
+	<module>
+		<name>VERMONT</name>
+		<xpath>/ycp:netconf/ycp:monitoring/mon:MonitorConfig</xpath>
+		<namespace pref="mon">urn:company:yencap:module:vermont:1.0</namespace>
+	</module>
+
+</modules>

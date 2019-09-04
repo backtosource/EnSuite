@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/Components/Pages
+END
+AgentReachablePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/AgentReachablePage.py
+END
+AgentPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/Components/Pages/AgentPage.py
+END
+AgentConnectedPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/AgentConnectedPage.py
+END
+CandidatePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/CandidatePage.py
+END
+YangPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/58/branches/yang-yencap-manager/Components/Pages/YangPage.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/__init__.py
+END
+Page.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/Page.py
+END
+KillPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/KillPage.py
+END
+SubtreePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ensuite/!svn/ver/56/branches/yang-yencap-manager/Components/Pages/SubtreePage.py
+END
+XpathPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/XpathPage.py
+END
+SubtreePage
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/SubtreePage
+END
+MainPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/MainPage.py
+END
+ClosePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/ClosePage.py
+END
+RolePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/RolePage.py
+END
+ValidatePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/ValidatePage.py
+END
+CopyPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/CopyPage.py
+END
+ModuleManagementPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/ModuleManagementPage.py
+END
+pageFactory.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ensuite/!svn/ver/58/branches/yang-yencap-manager/Components/Pages/pageFactory.py
+END
+ModulePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/ModulePage.py
+END
+DeletePage.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/DeletePage.py
+END
+LockPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/LockPage.py
+END
+LogoutPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/LogoutPage.py
+END
+EditPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/EditPage.py
+END
+LoginPage.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/ensuite/!svn/ver/42/branches/yang-yencap-manager/Components/Pages/LoginPage.py
+END

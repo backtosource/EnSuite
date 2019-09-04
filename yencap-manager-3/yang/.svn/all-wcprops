@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ensuite/!svn/ver/77/branches/yang-yencap-manager/yang
+END
+System.yang
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ensuite/!svn/ver/93/branches/yang-yencap-manager/yang/System.yang
+END
+ietf-inet-types.yang
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/ietf-inet-types.yang
+END
+network.yang
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/network.yang
+END
+ietf-yang-types.yang
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/ietf-yang-types.yang
+END
+olsr.yang
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/olsr.yang
+END
+veto.yang
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/86/branches/yang-yencap-manager/yang/veto.yang
+END
+Interfaces.yang
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/ensuite/!svn/ver/147/branches/yang-yencap-manager/yang/Interfaces.yang
+END
+DNS.yang
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/147/branches/yang-yencap-manager/yang/DNS.yang
+END
+Route.yang
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ensuite/!svn/ver/147/branches/yang-yencap-manager/yang/Route.yang
+END
+Log.yang
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/147/branches/yang-yencap-manager/yang/Log.yang
+END
+rbac.yang
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/rbac.yang
+END
+security.yang
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ensuite/!svn/ver/66/branches/yang-yencap-manager/yang/security.yang
+END
