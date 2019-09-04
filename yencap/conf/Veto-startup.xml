@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<veto xmlns="urn:loria:madynes:ensuite:yencap:1.0:module:Veto:1.0">
+  <context>
+    <id>c1</id>
+    <locality>low</locality>
+    <include>i1</include>
+    <include>id2</include>
+    <include>id3</include>
+  </context>
+  <context>
+    <id>c2</id>
+    <locality>low</locality>
+    <resource>
+      <name>r1</name>
+      <value>dd</value>
+      <value>dd2</value>
+    </resource>
+    <resource>
+      <name>r2</name>
+      <value>vv</value>
+      <value>ww</value>
+    </resource>
+    <target>
+      <uri>
+        <proto>sip</proto>
+        <address>1.1.1.1</address>
+        <port>12</port>
+      </uri>
+      <date>20100327</date>
+      <version>one</version>
+    </target>
+  </context> <definitions>
+     <name>Options_Def</name>
+     <when>SIP:request.method</when>
+     <operator>@match</operator>
+     <pattern>OPTIONS</pattern>
+     <event>ev_Options</event>
+  </definitions>
+
+  <definitions>
+     <name>LINKSYS962_Bad_CSeq</name>
+     <collectionName>cseq_list</collectionName>
+     <collectionType>set[SIP:headers.Cseq]</collectionType>
+  </definitions>
+  
+</veto>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules xmlns:ycp="urn:loria:madynes:ensuite:yencap:1.0">
+
+	
+
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:Log:1.0?module=Log</yanguri>
+		<cachelifetime>1</cachelifetime>
+	</module> 
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:Interfaces:1.0?module=Interfaces</yanguri>
+		<cachelifetime>1</cachelifetime>
+	</module>
+	
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:System:1.0?module=System</yanguri>
+		<cachelifetime>1000000</cachelifetime>
+	</module>
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:Dns:1.0?module=DNS</yanguri>
+		<cachelifetime>100</cachelifetime>
+	</module>
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:Route:1.0?module=Route</yanguri>
+		<cachelifetime>100</cachelifetime>
+		<parameters>
+			<parameter name="ip-version" value="4"/>
+		</parameters>
+	</module> 
+
+		
+<!--
+	<module>
+		<yanguri>urn:loria:madynes:ensuite:yencap:module:Veto:1.0?module=veto</yanguri>
+		<cachelifetime>1</cachelifetime>
+	</module>
+-->
+	<module>
+		<name>RBAC</name>
+		<xpath>/ycp:netconf/ycp:security/ac:rbac</xpath>
+		<namespace pref="ac">urn:loria:madynes:ensuite:yencap:module:RBAC:1.0</namespace>
+		<cachelifetime>1000000</cachelifetime>
+		<parameters>
+			<parameter name="yang" value="rbac"/>
+		</parameters>
+	</module>
+
+<!--
+	<module>
+		<name>OLSR</name>
+		<xpath>/ycp:netconf/ol:olsr</xpath>
+		<namespace pref="ol">urn:loria:madynes:ensuite:yencap:module:OLSR:1.0</namespace>
+		<cachelifetime>1000000</cachelifetime>
+		<parameters>
+			<parameter name="yang" value="olsr"/>
+		</parameters>
+	</module>
+-->
+<!--
+    <module>
+		<name>BGP</name>
+		<xpath>/ycp:netconf/ycp:routing/bgp:bgp</xpath>
+		<namespace pref="bgp">urn:loria:madynes:ensuite:yencap:module:BGP:1.0</namespace>
+		<cachelifetime>1000000</cachelifetime>
+		<parameters>
+			<parameter name="host" value="127.0.0.1"/>
+			<parameter name="port" value="2605"/>
+			<parameter name="password" value="zebra"/>
+			<parameter name="allowxpath" value="true"/>
+			<parameter name="enable_pass" value="true"/>
+		</parameters>
+	</module>
+-->
+<!--
+	<module>
+        <name>ASTERISK</name>
+        <xpath>/ycp:netconf/voip:asterisk</xpath>
+        <namespace pref="voip">urn:loria:madynes:ensuite:yencap:module:ASTERISK:1.0</namespace>
+        <cachelifetime>1000000</cachelifetime>
+        <parameters/>
+    </module>
+-->
+<!--
+	<module>
+		<name>VERMONT</name>
+		<xpath>/ycp:netconf/ycp:monitoring/mon:MonitorConfig</xpath>
+		<namespace pref="mon">urn:company:yencap:module:vermont:1.0</namespace>
+		<cachelifetime>10000</cachelifetime>
+		<parameters/>
+	</module>
+-->
+
+<!--
+	<module>
+		<name>RIP</name>
+		<xpath>/ycp:netconf/ycp:routing/rip:rip</xpath>
+		<namespace pref="rip">urn:loria:madynes:ensuite:yencap:module:RIP:1.0</namespace>
+		<cachelifetime>1000000</cachelifetime>
+		<parameters/>
+	</module>
+-->
+	
+</modules>
+

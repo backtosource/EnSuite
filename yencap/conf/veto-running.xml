@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<veto xmlns="urn:loria:madynes:ensuite:yencap:1.0:module:Veto:1.0">
+
+ 
+  <definitions>
+     <name>Options_Def</name>
+     <when>SIP:request.method</when>
+     <operator>@match</operator>
+     <pattern>^OPTIONS</pattern>
+     <event>ev_Options</event>
+  </definitions>
+  <definitions>
+     <name>LINKSYS962_Bad_CSeq</name>
+     <collectionName>cseq_list</collectionName>
+     <collectionType>set[SIP:headers.Cseq]</collectionType>
+  </definitions>
+  
+  <preventions>
+  	<name>LINKSYS962_BufferOverflow</name>
+  	<uses>Options_Def</uses>
+  	<event>ev_Options</event>
+ 	<actions>
+ 		<name>if-date</name>
+ 	 	<condition>
+ 		   	<term>SIP:headers.date</term>
+    		<operator>@ge</operator>
+    		<constant>120</constant>
+  		</condition>
+  	</actions>
+  	<actions>
+  		<name>then-drop</name>
+  		<drop/>
+  	</actions>
+  </preventions>
+  <preventions>
+  	<name>LINKSYS962_Bad_CSeq_Def</name>
+  	<uses>Options_Def</uses>
+  	<event>ev_Options</event>
+ 	<actions>
+ 		<name>if-date</name>
+ 	 	<condition>
+ 		   	<term>SIP:headers.date</term>
+    		<operator>@ge</operator>
+    		<constant>120</constant>
+  		</condition>
+  	</actions>
+  	<actions>
+  		<name>then-drop</name>
+  		<drop/>
+  	</actions>
+  </preventions>
+</veto>

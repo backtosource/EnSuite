@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xmlns="urn:loria:madynes:ensuite:yencap:module:Log:1.0" xmlns:xs="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <log-mode>text</log-mode>
+  <last-log-updated>/tmp</last-log-updated>
+  <log-info>
+    <file>/tmp</file>
+    <size>200</size>
+  </log-info>
+  <log-info>
+    <file>/usr/tmp</file>
+    <size/>
+  </log-info>
+</log>
